@@ -19,7 +19,7 @@ export type InputType =
   standalone: true,
   host: {
     '[class]': 'computedClass()',
-    '[type]': 'type()',
+    'type': 'type',
   },
 })
 export class UbInputDirective<Type extends InputType> {

@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 @plugin "tailwindcss-animate";
 
@@ -113,4 +117,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.highlight {
+  @apply bg-yellow-200 px-0.5 rounded;
 }

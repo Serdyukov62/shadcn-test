@@ -4,6 +4,7 @@ export type LibraryInfo = {
     ChiefOrg: string;
     ChiefPosition: string;
     FullName: string;
+    FullNameFragments?: TextFragment[];
     ObjectAddress: ObjectAddress[]
   },
   Number: number
@@ -11,4 +12,9 @@ export type LibraryInfo = {
 
 type ObjectAddress = {
     Address: string
+}
+
+export type TextFragment = {
+  text: string;
+  isHighlighted: boolean;
 }
